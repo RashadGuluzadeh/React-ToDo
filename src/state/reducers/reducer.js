@@ -2,7 +2,7 @@ import { ActionTypes } from "../actions/action-types"
 import { v4 as uuidv4 } from 'uuid';
 
 const initialState = {
-    todo: []
+    todo: [],
 }
 
 const reducer = (state=initialState, {type, payload}) => {
@@ -14,7 +14,7 @@ const reducer = (state=initialState, {type, payload}) => {
                 todo : [
                     ...state.todo,
                     {
-                        id: uuidv4(),
+                        id: id,
                         title: title,
                     }
                 ]

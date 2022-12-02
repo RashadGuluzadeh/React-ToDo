@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux"
 import { addTodo } from "../state/actions";
-import { Todos } from './Todos'
+import { Todo } from './Todo'
 import { RiMenuAddLine } from "react-icons/ri";
 
 const Form = () => {
@@ -36,7 +36,7 @@ const Form = () => {
         <RiMenuAddLine />
       </button>
       </form>
-      <Todos />
+      <Todo />
       </>
     
   );
